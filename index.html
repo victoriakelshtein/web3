@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Платформер</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Платформер</h1>
+            <div class="game-stats">
+                <div class="score">Очки: <span id="score">0</span></div>
+                <div class="level">Уровень: <span id="level">1</span></div>
+                <div class="lives">Жизни: <span id="lives">3</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+        <div class="game-controls">
+            <button id="startBtn">Старт</button>
+            <button id="pauseBtn">Пауза</button>
+            <button id="restartBtn">Рестарт</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>Управление:</h3>
+            <p>← → или A D - Движение</p>
+            <p>Пробел или W - Прыжок</p>
+            <p>ESC - Пауза</p>
+        </div>
+        
+        <div id="gameMessage" class="game-message hidden"></div>
+    </div>
+
+    <script src="js/InputHandler.js"></script>
+    <script src="js/Collision.js"></script>
+    <script src="js/Platform.js"></script>
+    <script src="js/MovingPlatform.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Coin.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
